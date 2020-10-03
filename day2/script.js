@@ -8,6 +8,10 @@ btn.addEventListener("click", function () {
   title.style.display = "none";
 });
 
+let title = "Social Transfer Programme Coordinator, Somali Cash Consortium";
+
+h3.textContent = title.slice(0, 30) + " ...";
+
 // very if js is connected to html
 console.log("connected");
 
@@ -69,8 +73,4 @@ course = null;
 console.log(course);
 console.log(school);
 
-
-
 let myVariable;
-
-
