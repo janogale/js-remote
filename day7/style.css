@@ -1,0 +1,17 @@
+body {
+    background: #404040;
+    color: #fff;
+
+}
+
+
+main{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background: #555;
+    margin-top: 20px;
+    height: 80vh;
+    padding: 20px
+}
+
