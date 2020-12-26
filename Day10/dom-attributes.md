@@ -128,7 +128,7 @@ We usually fill forms and forms accept data. Form fields are created using input
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Document Object Model:30 Days Of JavaScript</title>
+    <title>Document Object Model: Input value</title>
   </head>
 
   <body>
@@ -162,7 +162,7 @@ In the above example, we managed to get input values from two input fields by cl
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Document Object Model:30 Days Of JavaScript</title>
+    <title>Document Object Model: Input value</title>
   </head>
 
   <body>
@@ -192,7 +192,7 @@ In contrast to _input_ or _change_, the _blur_ event occur when the input field 
 <html>
 
 <head>
-    <title>Document Object Model:30 Days Of JavaScript</title>
+    <title>Document Object Model: blur event</title>
 </head>
 
 <body>
@@ -224,7 +224,7 @@ We can access all the key numbers of the keyboard using different event listener
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Document Object Model:30 Days Of JavaScript</title>
+    <title>Document Object Model:Keypress, keydown, keyup</title>
   </head>
 
   <body>
