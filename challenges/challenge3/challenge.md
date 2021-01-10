@@ -174,7 +174,7 @@ const users = [
 
 example cards
 
-![data card](./img/card.PNG)
+![data card](./img/card.png)
 
 ### Exercises: Level 1
 
@@ -183,14 +183,13 @@ example cards
    - Odd numbers background is yellow
    - Prime numbers background is red
 
-![Number Generator](./img/100nums.PNG)
+![Number Generator](./img/100nums.png)
 
 ### Exercises: Level 2
 
 1. Use the countries array in the folder, to display all the countries.
    in your page as seen in the picture
 
-![World Countries List](./img/countries.PNG)
+![World Countries List](./img/countries.png)
 
 - **Happy Coding**
-
