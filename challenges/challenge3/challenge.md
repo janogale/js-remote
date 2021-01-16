@@ -187,7 +187,7 @@ example cards
 
 ### Exercises: Level 2
 
-1. Use the countries array in the folder, to display all the countries.
+1. Use the countries array in the `challenge3` folder, to display all the countries.
    in your page as seen in the picture
 
 ![World Countries List](./img/countries.png)
