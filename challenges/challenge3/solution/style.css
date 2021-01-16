@@ -1,0 +1,64 @@
+body {
+  background-color: cadetblue;
+}
+
+h1 {
+  color: white;
+}
+
+section.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ccc;
+  min-width: 250px;
+  width: 25%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 20px rgb(255, 255, 255) 10px 10px;
+}
+
+#card-5 {
+  background-color: purple;
+  color: white;
+}
+
+#card-3 {
+  background-color: purple;
+  color: white;
+}
+
+#card-9 {
+  background-color: purple;
+  color: white;
+}
+
+section#numbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#numbers div {
+  width: 50px;
+  height: 40px;
+  margin: 3px;
+  border: 1px solid brown;
+  border-radius: 3px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
