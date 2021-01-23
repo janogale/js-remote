@@ -291,3 +291,74 @@ for (let i = 0; i <= 100; i++) {
   div.textContent = i;
   numbersSection.appendChild(div);
 } // loop end
+
+
+
+
+// List Countries.
+
+
+const countriesDiv = document.querySelector('.countries');
+
+// let lastIndex = countries.length - 1;
+
+// countriesDiv.textContent = countries[lastIndex]
+
+//let country = 'Unknow'; // global variable
+
+for(let country of countries){
+  
+  let div = document.createElement('div');
+  div.innerHTML  = `<span>${country.toUpperCase()}</span>`;
+  div.className = 'country'
+  
+  // set color red to countries that starts with a
+  // if(country.toLowerCase().startsWith('a')){
+  //   div.style.color = 'red';
+  // }
+  setStyle(country, 'a', div,  'red', 'grey')
+    // set color green to countries that starts with b
+    // if(country.toLowerCase().startsWith('b')){
+    //   div.style.color = 'green';
+    // }
+
+    // set color white to countries that starts with c
+    // if(country.toLowerCase().startsWith('c')){
+    //   div.style.color = '#fff';
+    //   div.style.background = 'green';
+   
+    // }
+    setStyle(country, 'c', div,  '#fff', 'green')
+    setStyle(country, 's', div,  'green', '#fff')
+
+    // set color brown to countries that starts with s
+    // if(country.toLowerCase().startsWith('s')){
+    //   div.style.color = 'yellow';
+    //   div.style.background = 'green';
+   
+    // }
+
+   //  div.style.border = '1px solid lightgrey'
+  //  div.style.padding = '20px'
+  //  div.style.margin = '3px'
+  //  div.style.width = '100px'
+  //  div.style.height = '50px'
+  //  div.style.background = '#fff'
+    
+   countriesDiv.appendChild(div);
+
+
+}
+
+
+
+
+
+
+function setStyle(country, char, el,  color = '', bg = ''){
+  if(country.toLowerCase().startsWith(char)){
+    el.style.color = color;
+    el.style.background = bg;
+ 
+  }
+}
