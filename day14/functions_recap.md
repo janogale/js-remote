@@ -1,30 +1,6 @@
-
-  - [Functions](#functions)
-    - [Function Declaration](#function-declaration)
-    - [Function without a parameter and return](#function-without-a-parameter-and-return)
-    - [Function returning value](#function-returning-value)
-    - [Function with a parameter](#function-with-a-parameter)
-    - [Function with two parameters](#function-with-two-parameters)
-    - [Function with many parameters](#function-with-many-parameters)
-    - [Function with unlimited number of parameters](#function-with-unlimited-number-of-parameters)
-      - [Unlimited number of parameters in regular function](#unlimited-number-of-parameters-in-regular-function)
-      - [Unlimited number of parameters in arrow function](#unlimited-number-of-parameters-in-arrow-function)
-    - [Anonymous Function](#anonymous-function)
-    - [Expression Function](#expression-function)
-    - [Self Invoking Functions](#self-invoking-functions)
-    - [Arrow Function](#arrow-function)
-    - [Function with default parameters](#function-with-default-parameters)
-    - [Function declaration versus Arrow function](#function-declaration-versus-arrow-function)
-  - [💻 Exercises](#-exercises)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
-    - [Exercises: Level 3](#exercises-level-3)
-
 #  Functions Recap
 
 ## Functions
-
-So far we have seen many builtin JavaScript functions. In this section, we will focus on custom functions. What is a function? Before we start making functions, lets understand what function is and why we need function?
 
 A function is a reusable block of code or programming statements designed to perform a certain task.
 A function is declared by a function key word followed by a name, followed by parentheses (). A parentheses can take a parameter. If a function take a parameter it will be called with argument. A function can also take a default parameter. To store a data to a function, a function has to return certain data types. To get the value we call or invoke a function.
@@ -99,8 +75,8 @@ Function can also return values, if a function does not return values the value 
 
 ```js
 function printFullName (){
-      let firstName = 'Asabeneh'
-      let lastName = 'Yetayeh'
+      let firstName = 'Jama'
+      let lastName = 'Ahmed'
       let space = ' '
       let fullName = firstName + space + lastName
       return fullName
@@ -301,21 +277,7 @@ const square = function(n) {
 console.log(square(2)) // -> 4
 ```
 
-### Self Invoking Functions
 
-Self invoking functions are anonymous functions which do not need to be called to return a value.
-
-```js
-(function(n) {
-  console.log(n * n)
-})(2) // 4, but instead of just printing if we want to return and store the data, we do as shown below
-
-let squaredNum = (function(n) {
-  return n * n
-})(10)
-
-console.log(squaredNum)
-```
 
 ### Arrow Function
 
@@ -481,11 +443,7 @@ console.log('Weight of an object in Newton: ', weightOfObject(100)) // 9.81 grav
 console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62)) // gravity at surface of Moon
 ```
 
-### Function declaration versus Arrow function
 
-It ill be covered in other time
-
-🌕 You are a rising star, now you knew function . Now, you are super charged with the power of functions. You have just completed day 7 challenges and you are 7 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.
 
 ## 💻 Exercises
 
