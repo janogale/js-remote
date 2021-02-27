@@ -59,8 +59,8 @@ addTwoNumbers() // a function has to be called by its name to be executed
 
 ```js
   function printFullName (){
-      let firstName = 'Asabeneh'
-      let lastName = 'Yetayeh'
+      let firstName = 'Ahmed'
+      let lastName = 'Jama'
       let space = ' '
       let fullName = firstName + space + lastName
       console.log(fullName)
@@ -324,7 +324,7 @@ const printFullName = (firstName, lastName) => {
   return `${firstName} ${lastName}`
 }
 
-console.log(printFullName('Asabeneh', 'Yetayeh'))
+console.log(printFullName('Ahmed', 'Jama'))
 ```
 
 The above function has only the return statement, therefore, we can explicitly return it as follows.
@@ -332,7 +332,7 @@ The above function has only the return statement, therefore, we can explicitly r
 ```js
 const printFullName = (firstName, lastName) => `${firstName} ${lastName}`
 
-console.log(printFullName('Asabeneh', 'Yetayeh'))
+console.log(printFullName('Ahmed', 'Jama'))
 ```
 
 ### Function with default parameters
@@ -355,16 +355,16 @@ functionName(arg)
 
 ```js
 function greetings(name = 'Peter') {
-  let message = `${name}, welcome to 30 Days Of JavaScript!`
+  let message = `${name}, welcome to JavaScript!`
   return message
 }
 
 console.log(greetings())
-console.log(greetings('Asabeneh'))
+console.log(greetings('Ahmed'))
 ```
 
 ```js
-function generateFullName(firstName = 'Asabeneh', lastName = 'Yetayeh') {
+function generateFullName(firstName = 'Ahmed', lastName = 'Yetayeh') {
   let space = ' '
   let fullName = firstName + space + lastName
   return fullName
@@ -411,23 +411,23 @@ functionName(arg)
 
 ```js
 const greetings = (name = 'Peter') => {
-  let message = name + ', welcome to 30 Days Of JavaScript!'
+  let message = name + ', welcome to JavaScript!'
   return message
 }
 
 console.log(greetings())
-console.log(greetings('Asabeneh'))
+console.log(greetings('Ahmed'))
 ```
 
 ```js
-const generateFullName = (firstName = 'Asabeneh', lastName = 'Yetayeh') => {
+const generateFullName = (firstName = 'Ahmed', lastName = 'Jama') => {
   let space = ' '
   let fullName = firstName + space + lastName
   return fullName
 }
 
 console.log(generateFullName())
-console.log(generateFullName('David', 'Smith'))
+console.log(generateFullName('Muse', 'Jama'))
 ```
 
 ```js
