@@ -41,7 +41,7 @@ import { sayHi } from "./file1.js";
 sayHi("Ahmed"); // Hello, Ahmed!
 ```
 
-> `Modules work only via HTTP protocol, not in local files`
+> `Modules work only via HTTPS protocol, not in local files`
 
 ## module features
 
