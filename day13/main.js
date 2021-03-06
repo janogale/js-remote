@@ -1,57 +1,43 @@
-// capture input values
+// imports
+import { sayHi, course } from "./file1.js";
 
-let nameInput = document.querySelector("#name");
-let userInput = document.querySelector("#user");
-let btn = document.querySelector("button");
-let list = document.querySelector("#list");
+// import and rename
+import { MonthsOfYear, YEAR as CurrentYear } from "./date.js";
+//import {format as formateDate} from './date-format.s'
 
-// user data
-let userList = JSON.parse(localStorage.getItem("usersList"));
+// default import
 
-let userData = [];
+import current from "./date.js";
+console.log(current);
 
-// if there is data in localstorage save to userData array
-if (userList) {
-  userData = userList;
-}
+// import utility
 
-for (let u of userData) {
-  let li = document.createElement("li");
+// import { getElement, changeColor, capitalize } from "./utils.js";
 
-  li.innerHTML = u.name + " " + u.user;
-  list.appendChild(li);
-}
+// import all
+import * as utils from "./utils.js";
 
-// button click
+// code
 
-btn.addEventListener("click", addItem);
+sayHi("Ahmed");
 
-function addItem() {
-  let name = nameInput.value;
-  let user = userInput.value;
+console.log(MonthsOfYear[1]);
 
-  // add input data to userData array
-  userData.push({
-    name: name,
-    user: user,
-  });
+//console.log(capitalize(course));
+console.log(utils.capitalize(course));
 
-  list.innerHTML = "";
+// let h1 = getElement("h1");
+// let h2 = getElement("h2");
 
-  for (let u of userData) {
-    let li = document.createElement("li");
+// h1.style.color = "green";
+// h2.style.color = "green";
 
-    li.innerHTML = u.name + " " + u.user;
-    list.appendChild(li);
-  }
+// changeColor("h1", "green");
+// changeColor("h2", "brown");
+utils.changeColor("h1", "green");
+utils.changeColor("h2", "brown");
 
-  // save data to localStorage
+let YEAR = 2020;
 
-  let stringData = JSON.stringify(userData);
-
-  localStorage.setItem("usersList", stringData);
-
-  //  empty input
-  nameInput.value = "";
-  userInput.value = "";
-}
+console.log(YEAR);
+console.log(CurrentYear);
