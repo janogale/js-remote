@@ -15,8 +15,10 @@ Scope in JavaScript refers to the current context of code, which determines the 
 
 In the example below, we will create a global variable.
 
+```js
 // Initialize a global variable
 let data = "pass123";
+```
 
 A variable declared inside the global scope is named global variable. Global variables are accessible from any scope.
 
